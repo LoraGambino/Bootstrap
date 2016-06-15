@@ -30,11 +30,27 @@
         background-color: black;
       }
 
+      #div1 {
+        background-color: blue
+      }
+
+      #div2 {
+        background-color: red;
+      }
+
+      #div3 {
+        background-color: green;
+      }
+
+      .contentDiv {
+        height: 800px;
+      }
+
     </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse">
 
-    <div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
 
       <div class="container">
 
@@ -58,9 +74,9 @@
 
           <ul class="nav navbar-nav">
 
-            <li><a href="">Page 1</a></li>
-            <li><a href="">Page 2</a></li>
-            <li><a href="">Page 3</a></li>
+            <li class="active"><a href="#div1">Page 1</a></li>
+            <li><a href="#div2">Page 2</a></li>
+            <li><a href="#div3">Page 3</a></li>
 
           </ul>
 
@@ -73,42 +89,11 @@
 
       <h1>Our Bootstrap Page</h1>
 
-      <button class="btn btn-success" data-toggle="modal" data-target="#myModal">
-        Launch Modal
-      </button>
+      <div id="div1" class="contentDiv">Content</div>
 
-      <div class="modal" id="myModal">
+      <div id="div2" class="contentDiv">Content</div>
 
-        <div class="modal-dialog modal-sm">
-
-          <div class="modal-content">
-
-            <div class="modal-header">
-
-              <button class="close" data-dismiss="modal">x</button>
-
-              <h4 class="modal-title">My Modal!</h4>
-
-            </div>
-
-            <div class="modal-body">
-
-              What a fantastic modal this is!
-
-            </div>
-
-            <div class="modal-footer">
-
-              <button class="btn btn-default" data-dismiss="modal">Close</button>
-              <button class="btn btn-success">Save Changes</button>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
+      <div id="div3" class="contentDiv">Content</div>
 
     </div>
 
